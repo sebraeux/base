@@ -1,3 +1,12 @@
+// jQuery: collapse navbar on scroll
+$(window).scroll(function() {
+    if ($(".navbar-theme").offset().top > 50) {
+        $(".navbar-theme").addClass("top-nav-collapse");
+    } else {
+        $(".navbar-theme").removeClass("top-nav-collapse");
+    }
+});
+
 $('.collapse-coment-avalia').collapse({
     toggle: false
 })
@@ -39,4 +48,3 @@ $(".modal").on("shown.bs.modal", function () { // any time a modal is shown
 $(window).on('popstate', function () {
     $(".modal").modal('hide');
 });
-
