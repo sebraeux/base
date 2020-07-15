@@ -190,7 +190,7 @@
     background: $white;
     margin-bottom: 30px;
     box-shadow: 0 0 25px rgba(40, 47, 60, .05), 0 20px 25px rgba(40, 47, 60, .05), 0 3px 4px rgba(40, 47, 60, .05);
-
+    border-radius: $border-radius-sm;
     &:last-child {
       margin-right: 0;
     }
@@ -279,4 +279,32 @@
   .carousel-inner {
     min-height: 400px;
   }
+}
+
+.iconografia-master {
+  .row{
+    @include clearfix();
+    .col-1{
+      float: left;
+      width: 1rem;
+      padding-top: 1em;
+    }
+  }
+  .i-name {
+    display: none;
+  }
+  .i-code {
+    display: none;
+  }
+  .demo-icon {
+    visibility: hidden;
+    margin: 2px 4px;
+  }
+  .demo-icon {
+    &[class^="uil-"]:before,
+    &[class*=" uil-"]:before {
+      visibility: visible !important;
+    }
+  }
+
 }
