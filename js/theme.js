@@ -7,6 +7,7 @@ $(window).scroll(function() {
     }
 });
 
+
 $('.collapse-coment-avalia').collapse({
     toggle: false
 })

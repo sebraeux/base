@@ -115,3 +115,31 @@ $theme-colors: map-merge((
         "light":      $light,
         "dark":       $dark
 ), $theme-colors);
+
+
+
+// Carousel do Base
+$carousel-control-color-base: $gray-900;
+$carousel-control-next-icon-bg-base: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color-base}' viewBox='0 0 24 24'><path d='M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z'/></svg>") ;
+$carousel-control-prev-icon-bg-base: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color-base}' viewBox='0 0 24 24'><path d='M11.29,12l3.54-3.54a1,1,0,0,0,0-1.41,1,1,0,0,0-1.42,0L9.17,11.29a1,1,0,0,0,0,1.42L13.41,17a1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41Z'/></svg>");
+
+
+$carousel-control-width-base:             15% !default;
+$carousel-control-opacity-base:           .5 !default;
+$carousel-control-hover-opacity-base:     .9 !default;
+$carousel-control-transition-base:        opacity .15s ease !default;
+
+$carousel-indicator-width-base:           16px !default;
+$carousel-indicator-height-base:          16px !default;
+$carousel-indicator-hit-area-height-base: 16px !default;
+$carousel-indicator-spacer-base:          4px !default;
+$carousel-indicator-active-bg-base:       $gray-900 !default;
+$carousel-indicator-transition-base:      opacity .6s ease !default;
+
+$carousel-caption-width-base:             70% !default;
+$carousel-caption-color-base:             $gray-900 !default;
+
+$carousel-control-icon-width-base:        48px !default;
+
+$carousel-transition-duration-base:       .6s !default;
+$carousel-transition-base:                transform $carousel-transition-duration ease-in-out !default; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
