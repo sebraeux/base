@@ -1,4 +1,6 @@
-// Nav
+@import "../scss/functions";
+@import "../scss/mixins";
+@import "../scss/variables";
 
 .navbar-sebrae {
   background: white url("#{$image-path-theme}/bgtop-sebrae.jpg") repeat-x;
@@ -189,8 +191,8 @@
     text-align: center;
     background: $white;
     margin-bottom: 30px;
-    box-shadow: 0 0 25px rgba(40, 47, 60, .05), 0 20px 25px rgba(40, 47, 60, .05), 0 3px 4px rgba(40, 47, 60, .05);
-    border-radius: $border-radius-sm;
+    box-shadow: $box-shadow-sm;
+    border-radius: $border-radius-lg;
     &:last-child {
       margin-right: 0;
     }
@@ -282,9 +284,9 @@
 }
 
 .iconografia-master {
-  .row{
+  .row {
     @include clearfix();
-    .col-1{
+    .col-1 {
       float: left;
       width: 1rem;
       padding-top: 1em;
@@ -306,5 +308,18 @@
       visibility: visible !important;
     }
   }
-
+  position: relative;
+  overflow: hidden;
+  &::after{
+    width: 100%;
+    position: absolute;
+    bottom: 3rem;
+    left: 0;
+    content: '';
+    height: 30%;
+    background: linear-gradient(180deg, rgba(245, 247, 250, 0) 0%, #F5F7FA 100%);
+  }
+}
+.iconografia{
+  position: relative;
 }
